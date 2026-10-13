@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+/* https://next.plugga.tech/kurs/openai-api-med-java?l=openai-api-med-java-intro&cu=/kurser&s=skip */
 @Configuration 
 public class ChatBotConfiguration {
     

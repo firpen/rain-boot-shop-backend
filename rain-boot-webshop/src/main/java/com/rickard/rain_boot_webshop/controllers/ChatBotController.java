@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/* https://next.plugga.tech/kurs/openai-api-med-java?l=openai-api-med-java-intro&cu=/kurser&s=skip */
 @RequestMapping("/chat")
 @RestController 
 public class ChatBotController {
