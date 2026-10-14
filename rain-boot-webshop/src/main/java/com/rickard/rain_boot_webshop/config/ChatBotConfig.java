@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 /* https://next.plugga.tech/kurs/openai-api-med-java?l=openai-api-med-java-intro&cu=/kurser&s=skip */
 @Configuration 
-public class ChatBotConfiguration {
+public class ChatBotConfig {
     
     @Value("${openai.apiKey}")
     private String openaiApiKey;
