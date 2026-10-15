@@ -19,8 +19,8 @@ public class RainBoot extends Product {
     @Column(nullable = false)
     private Color color;
 
-    public RainBoot(String productName, double price, String img, ShaftHeight shaftHeight, int size, Color color) {
-        super(productName, price, img);
+    public RainBoot(String productName, double price, ShaftHeight shaftHeight, int size, Color color) {
+        super(productName, price);
         this.shaftHeight = shaftHeight;
         this.size = size;
         this.color = color;

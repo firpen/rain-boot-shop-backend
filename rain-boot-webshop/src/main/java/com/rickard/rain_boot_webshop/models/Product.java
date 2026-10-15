@@ -1,5 +1,7 @@
 package com.rickard.rain_boot_webshop.models;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
+import jakarta.persistence.OneToMany;
 
 /* https://www.baeldung.com/hibernate-inheritance */
 @Entity 
@@ -23,13 +26,12 @@ public abstract class Product {
     @Column(nullable = false)
     private double price;
 
-    @Column(nullable = false)
-    private String img;
+    @OneToMany(mappedBy = "product")
+    private List<Picture> pictures;
 
-    public Product(String productName, double price, String img) {
+    public Product(String productName, double price) {
         this.productName = productName;
         this.price = price;
-        this.img = img;
     }
 
     public Product() {}
@@ -58,12 +60,12 @@ public abstract class Product {
         this.price = price;
     }
 
-    public String getImg() {
-        return img;
+    public List<Picture> getPictures() {
+        return pictures;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setPictures(List<Picture> pictures) {
+        this.pictures = pictures;
     }
 
 }
