@@ -12,8 +12,8 @@ public class Umbrella extends Product {
     @Column(nullable = false)
     private Color color;
 
-    public Umbrella(String productName, double price, String img, Color color) {
-        super(productName, price, img);
+    public Umbrella(String productName, double price, Color color) {
+        super(productName, price);
         this.color = color;
     }
 
