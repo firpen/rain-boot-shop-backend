@@ -5,17 +5,21 @@ import com.rickard.rain_boot_webshop.enums.ShaftHeight;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 
 /* https://www.baeldung.com/hibernate-inheritance */
 @Entity
 public class RainBoot extends Product {
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private ShaftHeight shaftHeight;
 
     @Column(nullable = false)
     private int size;
 
+    @Enumerated(EnumType.STRING)    
     @Column(nullable = false)
     private Color color;
 
