@@ -42,7 +42,7 @@ public class RainBootService {
         return rainbootDto;
     }
 
-    private RainBootDto convertRainBootToRainBootDto(RainBoot rainboot) {
+    public RainBootDto convertRainBootToRainBootDto(RainBoot rainboot) {
         List<PictureDto> pictureDtos = new ArrayList<>();
         for (Picture picture : rainboot.getPictures()) {
             PictureDto pictureDto = new PictureDto(picture.getImg());
