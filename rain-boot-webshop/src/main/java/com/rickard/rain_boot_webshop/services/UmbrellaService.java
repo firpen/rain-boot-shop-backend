@@ -42,7 +42,7 @@ public class UmbrellaService {
         return umbrellaDto;
     }
 
-    private UmbrellaDto convertUmbrellaToUmbrellaDto(Umbrella umbrella) {
+    public UmbrellaDto convertUmbrellaToUmbrellaDto(Umbrella umbrella) {
         List<PictureDto> pictureDtos = new ArrayList<>();
         for (Picture picture : umbrella.getPictures()) {
             PictureDto pictureDto = new PictureDto(picture.getImg());
