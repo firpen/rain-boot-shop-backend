@@ -11,6 +11,7 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @RequestMapping("/rainboot")
 @RestController 
@@ -28,8 +29,8 @@ public class RainBootController {
         return ResponseEntity.ok(rainBootDtos);
     }
 
-    @GetMapping()
-    public ResponseEntity<RainBootDto> getRainBootById(@RequestParam Long id) {
+    @GetMapping("/{id}")
+    public ResponseEntity<RainBootDto> getRainBootById(@PathVariable Long id) {
         RainBootDto rainBootDto = rainBootService.getRainBootById(id);
         return ResponseEntity.ok(rainBootDto);
     }
