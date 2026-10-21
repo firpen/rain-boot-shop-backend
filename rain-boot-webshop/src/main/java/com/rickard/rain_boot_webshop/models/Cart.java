@@ -19,8 +19,7 @@ public class Cart {
     @OneToMany(mappedBy = "cart")
     private List<CartItem> cartItems;
 
-    public Cart(Long cartId, List<CartItem> cartItems) {
-        this.cartId = cartId;
+    public Cart(List<CartItem> cartItems) {
         this.cartItems = cartItems;
     }
 

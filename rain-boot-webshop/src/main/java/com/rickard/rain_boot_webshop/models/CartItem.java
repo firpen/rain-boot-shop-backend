@@ -27,8 +27,7 @@ public class CartItem {
     @JoinColumn(name="product_id")
     private Product product;
 
-    public CartItem(Long cartItemId, int quantity, Cart cart, Product product) {
-        this.cartItemId = cartItemId;
+    public CartItem(int quantity, Cart cart, Product product) {
         this.quantity = quantity;
         this.cart = cart;
         this.product = product;

@@ -25,7 +25,7 @@ public class ChatBotController {
         this.chatBotService = chatBotService;
     }
     
-    @PostMapping("")
+    @PostMapping()
     public ResponseEntity<Message> postChatMessage(@RequestBody List<Message> messages) {
         
         ChatCompletionResponse response = this.chatBotService.sendChatCompletionRequest(messages);
