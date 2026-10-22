@@ -56,6 +56,4 @@ public class Order {
         this.cart = cart;
     }
 
-    
-
 }
