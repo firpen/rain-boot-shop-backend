@@ -12,7 +12,8 @@ import com.rickard.rain_boot_webshop.services.CartService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @RequestMapping("/cart")
 @RestController 
@@ -38,5 +39,12 @@ public class CartController {
         CartDto cartDto = cartService.getCart(cartItemDto.cartId());
         return ResponseEntity.ok(cartDto);
     }
+
+    @GetMapping()
+    public ResponseEntity<CartDto> getCartById(@RequestParam Long id) {
+        CartDto cartDto = cartService.getCart(id);
+        return ResponseEntity.ok(cartDto);
+    }
+    
     
 }
