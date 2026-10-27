@@ -24,8 +24,7 @@ public class Order {
     @JoinColumn(name = "cart_id")
     private Cart cart;
 
-    public Order(Long orderId, String email, Cart cart) {
-        this.orderId = orderId;
+    public Order(String email, Cart cart) {
         this.email = email;
         this.cart = cart;
     }

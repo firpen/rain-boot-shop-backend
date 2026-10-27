@@ -55,4 +55,10 @@ public class CartService {
         return cartDto;
     }
 
+    public void deleteCart(Long cartId) {
+        Optional<Cart> optionalCart = cartRepository.findById(cartId);
+        Cart cart = optionalCart.get();
+        cartRepository.delete(cart);
+    }
+
 }
