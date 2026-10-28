@@ -28,7 +28,7 @@ INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (5, '/rain-boots
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (5, '/rain-boots/Yellow_medium_shaft_45deg_right.png', 14);
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (5, '/rain-boots/Yellow_medium_shaft_front.png', 15);
 
-INSERT IGNORE INTO product (product_id, product_name, price) VALUES (6, 'Gul Mellanhög Stövel', 800);
+INSERT IGNORE INTO product (product_id, product_name, price) VALUES (6, 'Vit låg Stövel', 800);
 INSERT IGNORE INTO rain_boot (product_id, size, shaft_height, color) VALUES (6, 37, 'LOW', 'WHITE');
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (6, '/rain-boots/White_low_shaft_45deg_left.png', 16);
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (6, '/rain-boots/White_low_shaft_45deg_right.png', 17);
@@ -39,3 +39,15 @@ INSERT IGNORE INTO umbrella (product_id, color) VALUES (7, 'GREEN');
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (7, '/umbrellas/Umbrella_green_closed.jpg', 19);
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (7, '/umbrellas/Umbrella_green_open.jpg', 20);
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (7, '/umbrellas/Umbrella_green_rain.jpg', 21);
+
+INSERT IGNORE INTO product (product_id, product_name, price) VALUES (8, 'Rött Paraply', 400);
+INSERT IGNORE INTO umbrella (product_id, color) VALUES (8, 'RED');
+INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (8, '/umbrellas/Umbrella_red_closed.jpg', 22);
+INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (8, '/umbrellas/Umbrella_red_open.jpg', 23);
+INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (8, '/umbrellas/Umbrella_red_rain.jpg', 24);
+
+INSERT IGNORE INTO product (product_id, product_name, price) VALUES (9, 'Gult Paraply', 400);
+INSERT IGNORE INTO umbrella (product_id, color) VALUES (9, 'YELLOW');
+INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (9, '/umbrellas/Umbrella_yellow_closed.jpg', 25);
+INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (9, '/umbrellas/Umbrella_yellow_open.jpg', 26);
+INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (9, '/umbrellas/Umbrella_yellow_rain.jpg', 27);
