@@ -16,6 +16,7 @@
 - Jag har använt Claude för att förklara hur man läser Stripe-dokumentationen och även tagit hjälp för implementationen av Stripe tillsammans med dokumentationen.
 - Jag har även använt Claude för att förklara och skapa Dockerfilen samt docker-compose.yml för att kunna deploya projektet på min droplet på DigitalOcean.
 - Jag har även använt Claude för viss felsökning, och för att lösa hur man hämtar size med instanceof när produkten är en RainBoot.
+- Jag har använt Claude för att ta ställa frågor kring er-diagrammet för databasen, data.sql-filen och sql-syntaxen för att inserta produkter i databasen.
 
 # Tekniker (Kurskrav)
 - OpenAI API (gpt-4o) – chatbot
