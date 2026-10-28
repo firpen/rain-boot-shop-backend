@@ -28,7 +28,7 @@ INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (5, '/rain-boots
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (5, '/rain-boots/Yellow_medium_shaft_45deg_right.png', 14);
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (5, '/rain-boots/Yellow_medium_shaft_front.png', 15);
 
-INSERT IGNORE INTO product (product_id, product_name, price) VALUES (6, 'Vit låg Stövel', 800);
+INSERT IGNORE INTO product (product_id, product_name, price) VALUES (6, 'Vit Låg Stövel', 800);
 INSERT IGNORE INTO rain_boot (product_id, size, shaft_height, color) VALUES (6, 37, 'LOW', 'WHITE');
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (6, '/rain-boots/White_low_shaft_45deg_left.png', 16);
 INSERT IGNORE INTO picture (product_id, img, picture_id) VALUES (6, '/rain-boots/White_low_shaft_45deg_right.png', 17);
