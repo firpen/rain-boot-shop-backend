@@ -1,6 +1,5 @@
 # Tar en färdig image med Maven och Java 21 (JDK) och bygger vidare på det för att kompilera projektet
 FROM maven:3.10.0-eclipse-temurin-21 AS build
-# mkdir /app && cd /app
 WORKDIR /app/
 COPY pom.xml .
 COPY src src
@@ -9,7 +8,6 @@ RUN mvn clean package -DskipTests
 
 # Tar en färdig image med Java 21 JRE (ingen Maven) och bygger vidare på det.
 FROM eclipse-temurin:21-jre
-# mkdir /app && cd /app
 WORKDIR /app/
 # kopierar jar-filen rain-boot-webshop-0.0.1-SNAPSHOT.jar från förra steget (build) till app.jar 
 COPY --from=build /app/target/rain-boot-webshop-0.0.1-SNAPSHOT.jar app.jar
