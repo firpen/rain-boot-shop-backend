@@ -18,8 +18,29 @@
 - Jag har även använt Claude för viss felsökning, och för att lösa hur man hämtar size med instanceof när produkten är en RainBoot.
 - Jag har använt Claude för att ta ställa frågor kring er-diagrammet för databasen, data.sql-filen och sql-syntaxen för att inserta produkter i databasen.
 
+# Arbetssätt och lärande
+- Stripe, databasstrukturen, Docker och varukorgen var nog det svåraste med applikationen. 
+## Tester
+- För att skriva testerna använde jag mig av den här YouTube-videon: https://www.youtube.com/watch?v=XVFqOFKGeGM
+- Jag har nästan aldrig skrivit tester förut därför kändes det som ett stort hinder men när jag väl kom igång var det faktiskt inte så svårt.
+## Chatbot
+- Chatboten byggde jag med hjälp av kursmaterialet på Plugga.tech, det var även material som vi arbetat med veckan innan så det hade jag ganska bra koll på.
+## Databas
+- För att få databasstrukturen på plats började jag med att skapa ett ER-diagram. Eftersom jag endast haft enklare relationer i mina tidigare applikationer fick jag ta Claude till hjälp för att förklara vilka relationer jag behövde.
+- Sedan skapade jag mina databasmodeller utifrån ER-diagrammet med hjälp av den här dokumentationen: https://www.baeldung.com/spring-data-rest-relationships
+- Min produktklass är en abstrakt klass som mina produkter ärver från. Jag använde mig av Joined Table för att hantera dessa relationer. Här tog jag en del hjälp av AI samt den här dokumentationen: https://www.baeldung.com/hibernate-inheritance
+## Stripe
+- För att få Stripe på plats använde jag mig av den här dokumentationen:  https://docs.stripe.com/checkout/quickstart  https://docs.stripe.com/api/checkout/sessions/create
+- Jag tog hjälp av AI för att förstå builderstrukturen i dokumentationen.
+## Docker/Deployment
+- Jag använde mig av en Droplet på DigitalOcean för första gången för att deploya applikationen.
+- Här tog jag hjälp av AI för att veta vilka commands jag ska köra i terminalen och för att containerisera både frontenden och backenden med Docker.
+## Varukorg
+- Varukorgen var mycket mer omfattande än jag anade från början. Jag lyckades tillslut få till den mestadels på egen hand men visst blev det någon enstaka fråga till Claude och kanske lite hjälp för felsökning.
+   
 # Tekniker (Kurskrav)
 - OpenAI API (gpt-4o) – chatbot
 - Stripe för testköp
+  
 #  Teknikstack
 - Java 21, Spring Boot, Docker, DigitalOcean, MySQL
